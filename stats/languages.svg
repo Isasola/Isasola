@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="230" viewBox="0 0 960 230" role="img" aria-labelledby="title desc">
+<title id="title">Most-used programming languages</title>
+<desc id="desc">Language shares are calculated from GitHub's byte totals for public, non-fork, non-archived repositories.</desc>
+<rect width="960" height="230" rx="18" fill="#10191d"/>
+<rect x="1" y="1" width="958" height="228" rx="17" fill="none" stroke="#2a3b40"/>
+<text x="28.0" y="32.0" fill="#e2bd72" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="start">LANGUAGE MIX  /  PUBLIC SOURCE REPOSITORIES</text>
+<text x="28.0" y="56.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="20" font-weight="650" text-anchor="start">Languages in the code I share</text>
+<text x="28.0" y="101.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">TypeScript</text>
+<rect x="190" y="89" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="89" width="306.74" height="8" rx="4" fill="#3178c6"/>
+<text x="836.0" y="101.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">50.3%</text>
+<text x="28.0" y="123.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">Python</text>
+<rect x="190" y="111" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="111" width="145.83" height="8" rx="4" fill="#3572a5"/>
+<text x="836.0" y="123.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">23.9%</text>
+<text x="28.0" y="145.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">JavaScript</text>
+<rect x="190" y="133" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="133" width="79.54" height="8" rx="4" fill="#f1e05a"/>
+<text x="836.0" y="145.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">13.0%</text>
+<text x="28.0" y="167.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">PLpgSQL</text>
+<rect x="190" y="155" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="155" width="71.68" height="8" rx="4" fill="#55b6a0"/>
+<text x="836.0" y="167.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">11.8%</text>
+<text x="28.0" y="189.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">HTML</text>
+<rect x="190" y="177" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="177" width="5.03" height="8" rx="4" fill="#e34c26"/>
+<text x="836.0" y="189.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">0.8%</text>
+<text x="28.0" y="211.0" fill="#f4f0e7" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" font-weight="550" text-anchor="start">CSS</text>
+<rect x="190" y="199" width="610" height="8" rx="4" fill="#25353a"/>
+<rect x="190" y="199" width="0.58" height="8" rx="4" fill="#563d7c"/>
+<text x="836.0" y="211.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="11" font-weight="500" text-anchor="start">0.1%</text>
+<text x="28.0" y="211.0" fill="#9aaba8" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="10" font-weight="400" text-anchor="start">Weighted by code size · forks and archived repositories excluded</text>
+</svg>

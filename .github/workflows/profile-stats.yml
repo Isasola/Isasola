@@ -1,0 +1,42 @@
+name: Refresh profile stats
+
+on:
+  schedule:
+    - cron: "30 1 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - "scripts/generate_profile_stats.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: false
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate profile cards from GitHub data
+        run: python3 scripts/generate_profile_stats.py
+
+      - name: Commit generated cards only when they change
+        shell: bash
+        run: |
+          git add -- stats/account.svg stats/languages.svg stats/activity.svg
+          if git diff --cached --quiet; then
+            echo "The profile cards are unchanged; nothing to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --quiet --message "profile: refresh GitHub stats"
+          git push --quiet
