@@ -40,4 +40,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit --quiet --message "koi: refresh Git-Koi"
-          git push --quiet
+
+          # Another profile workflow can update main at the same time.
+          # Rebase and retry so this commit contains only the GIF on top of
+          # the latest profile assets.
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push raced with another profile update (attempt ${attempt}/3); retrying."
+          done
+          exit 1
